@@ -75,7 +75,7 @@ input[type="search"]::placeholder {
   display: flex;
   align-items: center;
   /* background-color: red; */
-  margin-right: 10rem;
+  margin-right:7rem;
   padding: 0rem 2rem;
   /* padding: 2rem; */
   /* color: #65676B; */
@@ -979,21 +979,21 @@ input[type="search"]::placeholder {
 }
 .Post {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  height: 78rem;
+  height: 79rem;
   margin-top: 2rem;
   background-color: white;
   border-radius: 0.7rem;
 }
 .Postsity {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  height: 70rem;
+  height: 71rem;
   margin-top: 2rem;
   background-color: white!important;
   border-radius: 0.7rem;
 }
 .Postsitys {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  height: 19rem;
+  height: 20rem;
   margin-top: 2rem;
   background-color: white!important;
   border-radius: 0.7rem;
@@ -1628,9 +1628,10 @@ opacity: 1;
 }
 .right-side-wrapper::-webkit-scrollbar {
     background:#a0a0a0;; 
-    border-radius:10px;
+    /* border-radius:10px;
     width:8px;
-    height: 10px;
+    height: 10px; */
+    display: none;
 }
 .online-imgs {
   width:15%;
@@ -1648,3 +1649,78 @@ opacity: 1;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.post-full-images {
+  background-color: red;
+  height: 50rem;
+  width: 51rem;
+}
+/* MAP */
+#map {
+  margin-top: 1rem;
+  flex: 1;
+  height: 100%;
+  background-color: var(--color-light--1);
+  z-index: 50;
+}
+.input-searchs {
+  display: none;
+}
+
+/* media Query for 1252px - 1300px */
+@media (min-width: 62em) and (max-width: 80em){
+ input[type="search"]{
+  display: none;
+ }
+
+.nav-search-bar {
+width: 4rem;
+}
+.nav-icons {
+margin-right: 0rem;
+}
+.left-sidebar {
+  display: none;
+}
+.mainside-bar-content {
+  width: 58%;
+ /* margin-right: -50rem; */
+ margin-left: 10rem;
+}
+.right-sidebar  {
+flex-basis: 25%;
+}
+.right-side-wrapper {
+  max-height: 25rem;
+  /* background-color: red; */
+}
+.input-searchs {
+   border: none;
+  width: 100%;
+  height: 4rem;
+  border-radius: 50px;
+  background-color: #f0f2f5;
+  margin-right: rem;
+  font-size: 3rem;
+  font-size: 1.4rem;
+  background-color: #f0f2f5;
+  outline: none;
+  padding: 2rem;
+}
+}
+/* media query for 700px and 900px */
+@media (min-width: 40em) and (max-width: 60em){
+  .nav-bar {
+background-color: red;
+  }
+
+  input[type="search"]{
+  display: none;
+ }
+ .nav-search-bar {
+width: 4rem;
+}
+.nav-icons {
+  margin-right: 0rem;
+
+}
+};

@@ -412,7 +412,7 @@ previousVideoBtn.addEventListener("click", ()=>{
 closeBtnVideo.addEventListener("click", () => {
   storyVideoFullPage.classList.add("full-view-video-inactive");
   // console.log("This is great");
-  storyVideoFull.pause();
+  // storyVideoFull.pause();
   // alert("This is great!");
 });
 
@@ -436,7 +436,7 @@ let maxScrollValue =
 
 
 nextVideoViewBtn.addEventListener("click", () => {
-   if (currentActive >= videoStories.length - 1) {
+   if (currentActiveVideo >= videoStories.length - 1) {
      return;
    }
    currentActiveVideo++;
@@ -454,3 +454,42 @@ previousVideoViewBtns.addEventListener("click", () => {
 });
 
 // storyImageFull;
+ 
+// Leaflet maps
+
+if(navigator.geolocation)
+navigator.geolocation.getCurrentPosition(
+  function(position){
+  const {latitude} = position.coords;
+  const {longitude} = position.coords;
+  console.log(`https://www.google.com/maps/@${latitude},${longitude},15z?entry=ttu`);
+
+
+  
+  const map = L.map("map").setView([51.505, -0.09], 20);
+  
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+  
+  L.marker([51.5, -0.09])
+    .addTo(map)
+    .bindPopup("A pretty CSS popup.<br> Easily customizable.")
+    .openPopup();
+}, 
+function(){
+alert('Could not get your position!')
+
+ 
+  }
+
+);
+
+// skeleton loader demo test
+const allSkeleton =  document.querySelectorAll('.skeleton');
+
+window.addEventListener('load', function(){
+ allSkeleton.forEach((item) => item.classList.remove("skeleton"))
+
+});
