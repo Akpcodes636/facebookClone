@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- using html 5 semantics elements -->
-    <header>
+    <header >
       <nav>
         <div class="nav-bar">
           <div class="logo">
@@ -1185,20 +1185,24 @@
                  </div>
                  <div class="photos">
                   <div class="photo-card skeleton">
-                    <img src="./assets/images/img2.png" alt="picture of a photocard">
+                    <img src="./assets/images/img2.png" alt="picture of a photocard" class="photo-card-img">
                   </div>
-                   <p class="blog2-text skeleton-text">Photos/videos</p>
+                  <div class="blog2-text">
+                    <p class=" skeleton-text">Photos/videos</p>
+                  </div>
                  </div>
                  <div class="feeling">
                   <div class="smiley-face skeleton">
                     <img src="./assets/images/img3.png" alt="picture of a smiley face">
                   </div>
-                   <p class="blog2-text skeleton-text">Feeling/activity</p>
+                  <div class="blog2-text">
+                    <p class="skeleton-text">Feeling/activity</p>
+                  </div>
                  </div>
                </div>
               </div>
               <!-- Post section -->
-              <div class="Post ">
+              <div class="Post">
                 <div class="post-top">
                   <div class="whole-section">
                     <div class="post-img skeleton">
@@ -1270,8 +1274,8 @@
                       <div class="like-box-both">
                         <span class="material-symbols-outlined">thumb_up</span>
                         <span class="material-symbols-outlined">favorite</span>
+                        <p class="notification-text skeleton-text">1.7K</p>
                       </div>
-                      <p class="notification-text skeleton-text">1.7K</p>
                     </div>
                     <div class="like-box2">
                       <p class="like-font">111<span class="material-symbols-outlined chatsvg">chat_bubble</span></p>
@@ -1307,7 +1311,7 @@
 
               </div>
       </div>
-              <div class="Postsity">
+              <div class="Postsity hide">
                 <div class="post-top">
                   <div class="whole-section">
                     <div class="post-img skeleton">
@@ -1441,7 +1445,7 @@
 
               </div>
             </div>
-            <div class="Postsitys">
+            <div class="Postsitys hide">
               <div class="post-top">
                 <div class="whole-section">
                   <div class="post-img skeleton">
@@ -1577,7 +1581,7 @@ How on earth will I see 85k to pay school fees God abeg 😩.. this is too much
     </div>
     
   </div>
-   <div class="Postsity">
+   <div class="Postsity hide">
                 <div class="post-top">
                   <div class="whole-section">
                     <div class="post-img skeleton">
@@ -1711,7 +1715,7 @@ How on earth will I see 85k to pay school fees God abeg 😩.. this is too much
 
               </div>
             </div>
-  <button class="load-more">Load more</button>
+  <button class="load-more hide">Load more</button>
   
 </div>
 <!------------ Right sidebar-------->
@@ -1920,6 +1924,29 @@ How on earth will I see 85k to pay school fees God abeg 😩.. this is too much
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+ <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAxO8oiHdPA6zih9gG_8qdBCVUlhuxXpvI",
+    authDomain: "facebook-d0435.firebaseapp.com",
+    projectId: "facebook-d0435",
+    storageBucket: "facebook-d0435.appspot.com",
+    messagingSenderId: "625197013537",
+    appId: "1:625197013537:web:b0e0d6f2f2f1c6c73b6160",
+    measurementId: "G-NWJDPHG9LR"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
     <script src="./assets/main.js"></script>
   </body>
 </html>
