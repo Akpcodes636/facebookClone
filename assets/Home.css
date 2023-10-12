@@ -5,12 +5,14 @@
 }
 html {
   font-size: 62.5%;
+    overflow-x: hidden;
 }
 body {
   font-weight: 400;
   background-color: #f0f2f5;
   line-height: 1;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 .container {
   margin: 0 auto;
@@ -240,6 +242,8 @@ input[type="search"]::placeholder {
 /* -------left---side-bar */
 .left-sidebar {
   flex-basis: 20%;
+  /* display: flex;
+  flex-direction: column; */
   align-items: flex-start;
   /* position: sticky;
   position: -webkit-sticky;
@@ -256,7 +260,7 @@ input[type="search"]::placeholder {
 .left-content {
   /* top:4rem;  */
   padding: 2rem 0rem;
-  height: 60rem;
+  height: 100%;
   /* height:calc(100vh - 3.5rem); */
   /* background: #000; */
   /* overflow-y: scroll; */
@@ -391,6 +395,8 @@ input[type="search"]::placeholder {
   flex-basis: 20%;
   align-items: flex-start;
   margin-top: 2rem;
+  height: 100%;
+  background-color: red;
   /* height: 50rem; */
 
   /* background-color: blue; */
@@ -412,7 +418,6 @@ input[type="search"]::placeholder {
   margin: 2.5rem 0rem;
   position: relative;
   /* padding: 3rem 0rem; */
-  overflow: hidden;
 }
 .title-bar {
   display: flex;
@@ -497,7 +502,8 @@ input[type="search"]::placeholder {
   gap: 0.7rem;
   overflow-x: scroll;
   overflow-y: hidden;
-  max-width: 50rem;
+  /* max-width: 50rem; */
+  width: 100%;
   scrollbar-width: none;
   /* position: relative; */
   scroll-behavior: smooth;
@@ -941,7 +947,7 @@ input[type="search"]::placeholder {
 .photos {
   padding: 0.5rem 0;
   border-radius: 7px;
- 
+
   justify-content: center;
   width: 30%;
   /* padding: 0.5rem 2.5rem; */
@@ -1621,8 +1627,8 @@ input[type="search"]::placeholder {
 .right-side-wrapper {
   position: fixed;
   overflow-y: scroll;
-  max-height: 58rem;
-  /* height: 90%; */
+  /* height: 100%; */
+  height: 90%;
   /* overflow: hidden; */
   overflow-x: hidden;
 }
@@ -1666,12 +1672,7 @@ input[type="search"]::placeholder {
   display: none;
 }
 
-.like-box-both{
+.like-box-both {
   display: flex;
-  align-items: ce
-  ;
+  align-items: ce;
 }
-
-
-
-

@@ -29,19 +29,39 @@
 
                         <input type="password" id="userPass" name="userPass" placeholder="Password">
 
-                        <input type="button" value="Log in">
+                        <input id="btn" type="button" value="Log in">
 
                     </form>
                     <div class="hero-link">
                         <a href="#" class="hero-links">Forgotten password?</a>
                     </div>
                     <div class="hero-line-break"></div>
-                    <button class="hero-green-btn">Create new account</button>
+                    <button class="hero-green-btn" id="reg-btn">Create new account</button>
                 </div>
                 <div class="hero-form-link">
                     <a href="Home.html" class="hero-anchor">Create a Page </a>  for a celebrity, brand or business. 
                 </div>
             </div>
+            <div class="hero-form-box-2 hidden ">
+                <div class="hero-form2">
+                    <form action="">
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <input type="text" id="regName" name="name" placeholder="Email address or phone number">
+
+                        <input type="password" id="regPass" name="userPass" placeholder="Password">
+
+                        <input id="btnRegister" type="button" value="register" class="register">
+
+                    </form>
+                    <!-- <div class="hero-link">
+                        <a href="#" class="hero-links">Forgotten password?</a>
+                    </div>
+                </div>
+                <div class="hero-form-link">
+                    <a href="Home.html" class="hero-anchor">Create a Page </a>  for a celebrity, brand or business. 
+                </div> -->
+            </div>
+            
         </div>
     </section>
 </main>
@@ -69,5 +89,6 @@
     <p class="copy-right-link">Meta&copy;2023</p>
 </div>
 </footer>
+<script type="module" src="./assets/login.js"></script>
 </body>
 </html>

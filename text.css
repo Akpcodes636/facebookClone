@@ -1,0 +1,64 @@
+@media screen and (min-width: 180px) and (max-width: 350px) {
+  body {
+    background-color: blue;
+  }
+  .left-content {
+    display: none;
+  }
+  .right-sidebar {
+    display: none;
+  }
+  input[type="search"] {
+    display: none;
+  }
+  .nav-search-bar {
+    width: 4rem;
+  }
+  .nav-icons {
+    /* margin-right: -20rem; */
+    display: none;
+  }
+  .mainside-bar-content {
+    flex-basis: 100%;
+    /* margin-right: -10rem; */
+    /* margin: 0 auto; */
+
+    /* margin-left: -20rem; */
+  }
+
+  .input-searchs {
+    border: none;
+    display: block;
+    padding: 2rem;
+    width: 48rem;
+    height: 4rem;
+    border-radius: 50px;
+    background-color: #f0f2f5;
+    margin-right: rem;
+    font-size: 3rem;
+    font-size: 1.4rem;
+    background-color: #f0f2f5;
+    outline: none;
+  }
+  .Post {
+    height: 70rem;
+  }
+  .Postsity {
+    height: 63rem;
+  }
+  /* .Postsity{
+            height: 69rem;
+          } */
+  .post-full-images {
+    height: 40rem;
+  }
+  .tooltip-whole {
+    margin-right: -32rem;
+  }
+  .load-more {
+    margin-left: 15rem;
+  }
+  .like-box {
+    width: 50%;
+  }
+}
